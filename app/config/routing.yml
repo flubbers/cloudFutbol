@@ -1,0 +1,13 @@
+JuegoBundle:
+    resource: "@JuegoBundle/Resources/config/routing.yml"
+    prefix:   /
+
+JuegoBundle_demo:
+    resource: "@JuegoBundle/Controller/DefaultController.php"
+    type: annotation
+    prefix: /
+
+JuegoBundle_jugador:
+    resource: "@JuegoBundle/Controller/JugadorController.php"
+    type: annotation
+    prefix: /

@@ -1,0 +1,9 @@
+
+JuegoBundle_inicio:
+    pattern:  /index
+    defaults: { _controller: JuegoBundle:Default:inicio }
+
+JuegoBundle_perfil:
+    pattern:  /perfil/{name}
+    defaults: { _controller: JuegoBundle:Default:perfil }
+

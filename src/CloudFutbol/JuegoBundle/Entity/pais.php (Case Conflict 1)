@@ -1,0 +1,160 @@
+<?php
+
+namespace CloudFutbol\JuegoBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Validator\Constraints as Assert;
+
+/**
+ * CloudFutbol\JuegoBundle\Entity
+ *
+ * @ORM\Entity
+ * @ORM\Table(name="pais")
+ */
+class Pais
+{
+    /**
+     * @ORM\Id
+     * @ORM\Column(type="integer")
+     * @ORM\GeneratedValue(strategy="AUTO")
+     */
+    private $id;
+
+
+    /**
+     * @ORM\Column(type="string",length=255)
+     */
+    private $Nombre;
+
+
+    /**
+     * @ORM\Column(type="string",length=100)
+     */
+    private $NombreCorto;
+
+
+    /**
+     * @ORM\Column(type="boolean", nullable=false)
+     */
+    private $Comunitario;
+
+    /**
+     * @ORM\Column(type="string",length=100)
+     */
+    private $Pelo;
+
+    /**
+     * @ORM\Column(type="string",length=100)
+     */
+    private $Cabello;
+
+    /**
+     * Get id
+     *
+     * @return integer 
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * Set Nombre
+     *
+     * @param string $nombre
+     */
+    public function setNombre($nombre)
+    {
+        $this->Nombre = $nombre;
+    }
+
+    /**
+     * Get Nombre
+     *
+     * @return string 
+     */
+    public function getNombre()
+    {
+        return $this->Nombre;
+    }
+
+    /**
+     * Set NombreCorto
+     *
+     * @param string $nombreCorto
+     */
+    public function setNombreCorto($nombreCorto)
+    {
+        $this->NombreCorto = $nombreCorto;
+    }
+
+    /**
+     * Get NombreCorto
+     *
+     * @return string 
+     */
+    public function getNombreCorto()
+    {
+        return $this->NombreCorto;
+    }
+
+    /**
+     * Set Comunitario
+     *
+     * @param boolean $comunitario
+     */
+    public function setComunitario($comunitario)
+    {
+        $this->Comunitario = $comunitario;
+    }
+
+    /**
+     * Get Comunitario
+     *
+     * @return boolean 
+     */
+    public function getComunitario()
+    {
+        return $this->Comunitario;
+    }
+
+    /**
+     * Set Pelo
+     *
+     * @param string $pelo
+     */
+    public function setPelo($pelo)
+    {
+        $this->Pelo = $pelo;
+    }
+
+    /**
+     * Get Pelo
+     *
+     * @return string 
+     */
+    public function getPelo()
+    {
+        return $this->Pelo;
+    }
+
+    /**
+     * Set Cabello
+     *
+     * @param string $cabello
+     */
+    public function setCabello($cabello)
+    {
+        $this->Cabello = $cabello;
+    }
+
+    /**
+     * Get Cabello
+     *
+     * @return string 
+     */
+    public function getCabello()
+    {
+        return $this->Cabello;
+    }
+}
